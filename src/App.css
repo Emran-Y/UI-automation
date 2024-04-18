@@ -7,22 +7,58 @@
 }
 
 
-.my-image{
-  background-image: url('bg1.jpg');
-  width: 640px;
-  height: 488px;
+.bg-container{
+  width: 900px;
+  height: 800px;
   position: relative;
 }
 
-.my-frame{
-  width: 415px;
-  height: 310px;
-  background-image: url('print1.jpg');
-  background-size: cover;
-  background-position: center;
-  border-radius: 10px;
+.bg-image{
+  width: 100%;
+  height: 100%;
   position: absolute;
-  top:85px;
-  left: 95px;
+  top: 0;
+  left: 0;
+  /* border-radius: 10px; */
 
 }
+
+.print-container{
+  z-index: 999;
+  position: absolute;
+  max-width:343px;
+  max-height: 525px;
+  top: 167px;
+  left: 250px;
+  /* background-image: url('/prints/print1.png'); */
+}
+
+.print-image{
+  width: 100%;
+  height: 100%;
+
+}
+
+/* .btns{
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  
+} */
+
+
+/* .btns > *{
+  padding: 10px 20px;
+  background-color: #f1f1f1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
+  margin-right: 10px;
+}
+
+.btns > *:hover{
+  background-color: #e1e1e1;
+} */
