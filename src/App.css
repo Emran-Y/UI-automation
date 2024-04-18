@@ -1,0 +1,28 @@
+.container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.my-image{
+  background-image: url('bg1.jpg');
+  width: 640px;
+  height: 488px;
+  position: relative;
+}
+
+.my-frame{
+  width: 415px;
+  height: 310px;
+  background-image: url('print1.jpg');
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  position: absolute;
+  top:85px;
+  left: 95px;
+
+}
