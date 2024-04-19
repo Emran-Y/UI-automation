@@ -1,4 +1,11 @@
 export const styleOne = {
+    // container{
+    //   maxWidth: "900px",
+    //   maxHeight: "800px",
+    //   minHeight: "800px",
+    //   minWidth: "900px",
+    // },
+
     bgContainer: {
       width: "900px",
       height: "800px",
@@ -7,10 +14,11 @@ export const styleOne = {
     printContainer: {
       zIndex: "999",
       position: "absolute",
-      width: "335px",
-      height: "484px",
-      top: "167px",
-      left: "250px",
+      width: "422px",
+      // height: "602px",
+      height:'83%',
+      top: "67px",
+      left: "240px",
     },
 };
 
@@ -25,13 +33,13 @@ export const styleTwo = {
         
     },
     printContainer: {
-        width: "124px",
-        height: "155px",
+        width: "156px",
+        height: "193px",
         zIndex: "999",
         position: "absolute",
-        top: "195px",
-        left: "549px",
-        transform: "rotate(-1deg)",
+        top: "157px",
+        left: "547px",
+        transform: "rotate(-1.1deg)",
         // border: "1px solid black",
       },
       
@@ -49,11 +57,12 @@ export const styleThree = {
   },
   printContainer: {
     // marginTop: "500px",
-    width: "111px",
-    height: "157px",
+    width: "136px",
+    height: "191px",
     position: "absolute",
-    top: "210px",
-    left:"307px"
+    top: "178px",
+    left:"305px",
+    transform: "rotate(-0.3deg)",
   },
 }
 
@@ -69,10 +78,10 @@ export const styleFour = {
   },
   printContainer: {
     position:'absolute',
-    width: "169px",
-    height : '263px',
-    top:'154px',
-    left:'102px',
+    width: "204px",
+    height : '293px',
+    top:'129px',
+    left:'100px',
     // backgroundColor: 'blue',
   },
 }

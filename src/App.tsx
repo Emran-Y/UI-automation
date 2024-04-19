@@ -1,14 +1,18 @@
-import { useCallback, useRef,useState,useEffect, CSSProperties } from 'react';
+import { useCallback, useRef,useState, CSSProperties,  } from 'react';
 import { toPng } from 'html-to-image';
 import './App.css'
 import { styleOne } from './styles';
 import { styleTwo } from './styles';
 import { styleThree } from './styles';
 import { styleFour } from './styles';
+// import Upscaler from 'upscaler';
 
 function App() {
 
 
+
+  console.log(window.innerWidth)
+  console.log(window.innerHeight)
 
   
   const [curNumber, setCurNumber] = useState(1);
@@ -26,10 +30,13 @@ function App() {
   
     toPng(ref.current, { cacheBust: true })
       .then((dataUrl) => {
+        // base64 representation of image src
         const link = document.createElement('a');
         link.download = `image-${cur}.png`;
         link.href = dataUrl;
         link.click();
+        // console.log(upscaledSrc);
+      
       })
       .catch((err) => {
         console.log(err);
@@ -81,27 +88,46 @@ function App() {
     
     
     
-    const handleFileChange = useCallback((image: File) => {
-      setIsUploading(true);
-      const data = new FormData();
-      data.append('file', image);
-      data.append('upload_preset', 'tohco7vu');
+    // const handleFileChange = useCallback((image: File) => {
+    //   setIsUploading(true);
+    //   const data = new FormData();
+    //   data.append('file', image);
+    //   data.append('upload_preset', 'tohco7vu');
   
-      fetch(`https://api.cloudinary.com/v1_1/difavbhph/image/upload`, {
-        method: 'post',
-        body: data,
-      })
-        .then((res) => res.json())
-        .then((data) => {
-          setImageURL(data.secure_url);
-          setIsUploaded(true);
-          setIsUploading(false);
-        })
-        .catch((err) => {
-          console.log(err);
-          setIsUploading(false);
-        });
-    }, []);
+    //   fetch(`https://api.cloudinary.com/v1_1/difavbhph/image/upload`, {
+    //     method: 'post',
+    //     body: data,
+    //   })
+    //     .then((res) => res.json())
+    //     .then((data) => {
+    //       setImageURL(data.secure_url);
+    //       setIsUploaded(true);
+    //       setIsUploading(false);
+    //     })
+    //     .catch((err) => {
+    //       console.log(err);
+    //       setIsUploading(false);
+    //     });
+    // }, []);
+
+    // const [imageSrc, setImageSrc] = useState('');
+
+    const handleFileChange= (image:File) => {
+      setIsUploading(true);
+      const file = image;
+      if (!file) return;
+  
+      const reader = new FileReader();
+  
+      reader.onloadend = () => {
+        const base64String = reader.result as string;
+        setImageURL(base64String);
+        setIsUploaded(true);
+        setIsUploading(false);
+      };
+  
+      reader.readAsDataURL(file);
+    };
 
  
 
