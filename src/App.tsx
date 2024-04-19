@@ -59,6 +59,13 @@ function App() {
       setWidth(parseInt(styleFour.printContainer.width.split('px')[0]));
       setHeight(parseInt(styleFour.printContainer.height.split('px')[0]));
     }
+
+    console.log(cur);
+    console.log(left);
+    console.log(top);
+    console.log(width);
+    console.log(height);
+
   }
   
   
@@ -102,34 +109,34 @@ function App() {
   };
 
   const handleLeft = () => {
-    setLeft(left - 1);
+    setLeft(left -1);
   };
   const handleRight = () => {
-    setLeft(left + 1);
+    setLeft(left +1);
   }
 
   const handleUp = () => {
-    setTop(top - 1);
+    setTop(top -1);
   }
 
   const handleDown = () => {
-    setTop(top + 1);
+    setTop(top +1);
   }
 
   const handleWidthAdd = () => {
-    setWidth(width + 1);
+    setWidth(width +1);
   }
 
   const handleWidthSub = () => {
-    setWidth(width - 1);
+    setWidth(width -1);
   }
 
   const handleHeightAdd = () => {
-    setHeight(height + 1);
+    setHeight(height +1);
   }
 
   const handleHeightSub = () => {
-    setHeight(height - 1);
+    setHeight(height -1);
   }
 
   return (
@@ -151,19 +158,43 @@ function App() {
           </div>
         ) : curNumber === 2 ? (
           <div style={styleTwo.bgContainer as CSSProperties} ref={ref}>
-            <div style={styleTwo.printContainer as CSSProperties}>
+            <div style={
+              {
+                ...styleTwo.printContainer,
+                left: `${left}px`,
+                top: `${top}px`,
+                width: `${width}px`,
+                height: `${height}px`,
+              } as CSSProperties
+            }>
               {isUploaded && <img src={imageUrl} className='print-image' alt="print Image" />}
             </div>
           </div>
         ) : curNumber === 3 ? (
           <div style={styleThree.bgContainer as CSSProperties} ref={ref}>
-            <div style={styleThree.printContainer as CSSProperties}>
+            <div style={
+              {
+                ...styleThree.printContainer,
+                left: `${left}px`,
+                top: `${top}px`,
+                width: `${width}px`,
+                height: `${height}px`,
+              } as CSSProperties
+            }>
               {isUploaded && <img src={imageUrl} className='print-image' alt="print Image" />}
             </div>
           </div>
         ) : (
           <div style={styleFour.bgContainer as CSSProperties} ref={ref}>
-            <div style={styleFour.printContainer as CSSProperties}>
+            <div style={
+              {
+                ...styleFour.printContainer,
+                left: `${left}px`,
+                top: `${top}px`,
+                width: `${width}px`,
+                height: `${height}px`,
+              } as CSSProperties
+            }>
               {isUploaded && <img src={imageUrl} className='print-image' alt="print Image" />}
             </div>
           </div>
@@ -224,6 +255,7 @@ function App() {
         {isUploading && <div className="lds-hourglass"></div>}
         </>
       )}
+      
     </div>
   );
 }
