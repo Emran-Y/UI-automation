@@ -15,9 +15,9 @@ export const styleOne = {
       zIndex: "999",
       position: "absolute",
       width: "422px",
-      // height: "602px",
-      height:'83%',
-      top: "67px",
+      height: "602px",
+      // height:'83%',
+      top: "60px",
       left: "240px",
     },
 };
