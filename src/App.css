@@ -1,257 +1,28 @@
-body{
-  overflow: scroll;
-}
-
 .container{
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* max-width: 900px;
-  max-height: 754px;
-  min-width: 900px;
-  min-height: 747px; */
-  /* background: #000; */
   height: 100vh;
 }
 
 
-.bg-container{
-  width: 900px;
-  height: 800px;
+.my-image{
+  background-image: url('bg1.jpg');
+  width: 640px;
+  height: 488px;
   position: relative;
 }
 
-.bg-image{
-  width: 100%;
-  height: 100%;
-  position: sticky;
-  top: 0;
-  left: 0;
-  /* border-radius: 10px; */
-
-}
-
-.print-container{
-  z-index: 999;
-  position: sticky;
-  max-width:343px;
-  max-height: 525px;
-  top: 167px;
-  left: 250px;
-  /* background-image: url('/prints/print1.png'); */
-}
-
-.print-image{
-  width: 100%;
-  height: 100%;
-
-}
-
-/* .btns{
-  margin-top: 20px;
-  display: flex;
-  justify-content: center;
-  
-} */
-
-
-/* .btns > *{
-  padding: 10px 20px;
-  background-color: #f1f1f1;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  margin-right: 10px;
-}
-
-.btns > *:hover{
-  background-color: #e1e1e1;
-} */
-
-
-.please{
-  font-size: 30px;
-  text-transform: capitalize;
-  margin-bottom: 30px;
-  font-weight: 100;
-  border: 1px solid #04AA6D;
-  padding: 10px 20px;
+.my-frame{
+  width: 415px;
+  height: 310px;
+  background-image: url('print1.jpg');
+  background-size: cover;
+  background-position: center;
   border-radius: 10px;
-}
+  position: absolute;
+  top:85px;
+  left: 95px;
 
-.my-input-form{
-  background: #04AA6D;
-  color: white;
-  padding: 30px 60px;
-  border-radius: 30px;
-}
-
-
-input[type="file"] {
-  display: none;
-}
-
-.custom-file-upload {
-  border: 1px solid #ccc;
-  color: white;
-  text-shadow: 0px 0px 0px 1px;
-  display: inline-block;
-  padding: 6px 12px;
-  cursor: pointer;
-  font-family: 'sans-serif';
-  border-radius: 5px;
-}
-
-
-.main{
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-
-.num-container{
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-}
-
-.num-container > *{
-  padding: 10px 20px;
-  background-color: #04AA6D;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  margin-right: 10px;
-  color: white;
-
-}
-
-.num-container > *:hover{
-  background-color: #12d68e;
-  color: white;
-
-}
-
-.adjuster-cont{
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-
-}
-
-.adjuster-cont > *{
-  padding: 5px 10px;
-  background: #000;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  margin-right: 10px;
-  color: white;
-
-}
-
-.adjuster-cont > *:hover{
-  background-color: #333;
-  color: white;
-
-}
-
-.download-btn{
-  padding: 10px 20px;
-  background-color: #333 ;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  color: #04AA6D;
-  margin-right: 10px;
-
-}
-
-.download-btn:hover{
-  background-color: #04AA6D;
-  color: white;
-}
-
-
-.dim-adjust{
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
-
-}
-
-.dim-adjust > *{
-  padding: 5px 10px;
-  background: #000;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  margin-right: 10px;
-  color: white;
-
-}
-
-.dim-adjust > *:hover{
-  background-color: #333;
-  color: white;
-
-}
-
-
-
-.lds-hourglass,
-.lds-hourglass:after {
-  box-sizing: border-box;
-}
-.lds-hourglass {
-  margin-top: 10px;
-  display: inline-block;
-  position: relative;
-  width: 80px;
-  height: 80px;
-}
-.lds-hourglass:after {
-  content: " ";
-  display: block;
-  border-radius: 50%;
-  width: 0;
-  height: 0;
-  margin: 8px;
-  box-sizing: border-box;
-  border: 32px solid currentColor;
-  border-color: currentColor transparent currentColor transparent;
-  animation: lds-hourglass 1.2s infinite;
-}
-@keyframes lds-hourglass {
-  0% {
-    transform: rotate(0);
-    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
-  }
-  50% {
-    transform: rotate(900deg);
-    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
-  }
-  100% {
-    transform: rotate(1800deg);
-  }
 }
