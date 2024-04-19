@@ -18,10 +18,10 @@ function App() {
   const [imageUrl, setImageURL] = useState("");
   const [isUploading, setIsUploading] = useState(false);
   const ref = useRef<HTMLDivElement>(null);
-  const [left,setLeft] = useState(0);
-  const [top,setTop] = useState(0);
-  const [width,setWidth] = useState(0);
-  const [height,setHeight] = useState(0);
+  const [left,setLeft] = useState(240);
+  const [top,setTop] = useState(60);
+  const [width,setWidth] = useState(422);
+  const [height,setHeight] = useState(602);
 
 
  
@@ -59,11 +59,6 @@ function App() {
       setWidth(parseInt(styleFour.printContainer.width.split('px')[0]));
       setHeight(parseInt(styleFour.printContainer.height.split('px')[0]));
     }
-    console.log('curNumber',curNumber);
-    console.log('left',left);
-    console.log('top',top);
-    console.log('width',width);
-    console.log('height',height);
   }
   
   
@@ -197,6 +192,7 @@ function App() {
             
           </div>
 
+       
           <div className='dim-adjust'>
             <button onClick={handleWidthAdd} >W +</button>
             <button onClick={handleWidthSub}>W -</button>
