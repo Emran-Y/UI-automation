@@ -1,4 +1,4 @@
-import React, { useCallback, useRef, useState, CSSProperties,useEffect } from 'react';
+import  { useCallback, useRef, useState, CSSProperties } from 'react';
 import { toPng } from 'html-to-image';
 import './App.css';
 import { styleOne } from './styles';
