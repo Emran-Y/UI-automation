@@ -6,7 +6,7 @@ import { styleTwo } from './styles';
 import { styleThree } from './styles';
 import { styleFour } from './styles';
 import { styleFive } from './styles';
-import { styleSix } from './styles';
+// import { styleSix } from './styles';
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa6";
