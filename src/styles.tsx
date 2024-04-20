@@ -87,6 +87,49 @@ export const styleFour = {
 }
 
 
+export const styleFive = {
+  bgContainer:{
+    position: "relative",
+    width: "700px",
+    height: "700px",
+    zIndex: "0",
+    backgroundImage: "url(/backgrounds/background5.png)",
+    backgroundSize: "cover",
+  },
+  printContainer:{
+    position:'absolute',
+    width: "125px",
+    height : '177px',
+    top:'113px',
+    left:'333px',
+    // backgroundColor: 'blue',
+  },
+}
 
+export const styleSix = {
+  bgContainer:{
+    position: "relative",
+    width: "750px",
+    height: "500px",
+    zIndex: "0",
+    backgroundImage: "url(/backgrounds/background6.png)",
+    backgroundSize: "cover",
+  },
+  leftPrint : {
+    position:'absolute',
+    width: "250px",
+    height : '177px',
+    top:'113px',
+    left:'100px',
+  },
+  rightPrint : {
+    position:'absolute',
+    width: "225px",
+    height : '327px',
+    top:'120px',
+    left:'437px',
+    transform: "rotate(0.3deg)",
+  }
+}
   
 
