@@ -352,7 +352,7 @@ function App() {
                     top: `${rightTop}px`,
                     width: `${rightWidth}px`,
                     height: `${rightHeight}px`,
-                  }
+                  } as CSSProperties
                 } alt="print Image" 
                 />
               </div>
