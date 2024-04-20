@@ -2,6 +2,11 @@ body{
   overflow: scroll;
 }
 
+button{
+  cursor: pointer;
+
+}
+
 .container{
   display: flex;
   flex-direction: column;
@@ -189,33 +194,7 @@ input[type="file"] {
 }
 
 
-.dim-adjust{
-  display: flex;
-  justify-content: center;
-  gap: 10px;
-  margin-bottom: 20px;
 
-}
-
-.dim-adjust > *{
-  padding: 5px 10px;
-  background: #000;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
-  font-size: 16px;
-  font-weight: 600;
-  color: #333;
-  margin-right: 10px;
-  color: white;
-
-}
-
-.dim-adjust > *:hover{
-  background-color: #333;
-  color: white;
-
-}
 
 
 .slider-container {
@@ -295,4 +274,64 @@ input[type="range"]::-ms-thumb {
   100% {
     transform: rotate(1800deg);
   }
+}
+
+.left-right-btns > * {
+  color: white;
+  background: #4CAF50;
+  border: none;
+  padding: 0.5rem 1rem;
+  margin-right: 10px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+.left-right-btns > *:hover {
+  background-color: #388E3C; /* Darker shade of green */
+}
+
+
+.num-container > *{
+  width: 40px;
+  height: 40px;
+  padding-inline: 10px;
+}
+
+.adjuster-cont > *{
+  background-color: #008CBA;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.slider-container{
+  margin-top: -10px;
+}
+
+.dim-adjust > *{
+  background: #f44336;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  margin-right: 25px;
+  border-radius: 7px;
+  margin-bottom: 15px;
+
+}
+
+.dim-adjust > *:hover {
+  background-color: #d32f2f; /* Darker shade of red */
+}
+
+
+
+
+.download-btn {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #008CBA;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }

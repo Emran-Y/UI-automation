@@ -10,6 +10,7 @@ export const styleOne = {
       width: "900px",
       height: "800px",
       position: "relative",
+      // marginTop:'20px'
     },
     printContainer: {
       zIndex: "999",
@@ -118,9 +119,10 @@ export const styleSix = {
   leftPrint : {
     position:'absolute',
     width: "250px",
-    height : '177px',
-    top:'113px',
-    left:'100px',
+    height : '336px',
+    top:'98px',
+    left:'142px',
+    transform: "rotate(0.3deg)",
   },
   rightPrint : {
     position:'absolute',
@@ -129,6 +131,33 @@ export const styleSix = {
     top:'120px',
     left:'437px',
     transform: "rotate(0.3deg)",
+  }
+}
+
+export const styleSeven = {
+  bgContainer:{
+    position: "relative",
+    width: "850px",
+    height: "570px",
+    zIndex: "0",
+    backgroundImage: "url(/backgrounds/background7.png)",
+    backgroundSize: "cover",
+  },
+  leftPrint : {
+    position:'absolute',
+    width: "175px",
+    height : '228px',
+    top:'73px',
+    left:'234px',
+    // backgroundColor: 'blue',
+  },
+  rightPrint : {
+    position:'absolute',
+    width: "176px",
+    height : '228px',
+    top:'73px',
+    left:'445px',
+    // backgroundColor: 'blue',
   }
 }
   
