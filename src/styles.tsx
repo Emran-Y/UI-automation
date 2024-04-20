@@ -99,10 +99,10 @@ export const styleFive = {
   },
   printContainer:{
     position:'absolute',
-    width: "125px",
-    height : '177px',
+    width: "127px",
+    height : '179px',
     top:'113px',
-    left:'333px',
+    left:'335px',
     // backgroundColor: 'blue',
   },
 }

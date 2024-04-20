@@ -415,49 +415,49 @@ function App() {
                 backgroundColor: curNumber === 1 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >1</button>
+            >bg-1</button>
             <button onClick={() => flipTo(2)} 
             style={
               {
                 backgroundColor: curNumber === 2 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >2</button>
+            >bg-2</button>
             <button onClick={() => flipTo(3)}
             style={
               {
                 backgroundColor: curNumber === 3 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >3</button>
+            >bg-3</button>
             <button  onClick={() => flipTo(4)} 
             style={
               {
                 backgroundColor: curNumber === 4 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >4</button>
+            >bg-4</button>
             <button  onClick={() => flipTo(5)} 
             style={
               {
                 backgroundColor: curNumber === 5 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >5</button>
+            >bg-5</button>
             <button  onClick={() => flipTo(6)} 
             style={
               {
                 backgroundColor: curNumber === 6 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >6</button> 
+            >bg-6</button> 
             <button  onClick={() => flipTo(7)} 
             style={
               {
                 backgroundColor: curNumber === 7 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >7</button>
+            >bg-7</button>
           </div>
 
           <div className='adjuster-cont'>
