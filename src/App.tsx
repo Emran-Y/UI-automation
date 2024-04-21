@@ -370,10 +370,24 @@ function App() {
                 maxHeight: styleSeven.bgContainer.height,
               }}>
                 <img src={imageUrl} style={
-                  styleSeven.leftPrint as CSSProperties
-                } alt="print Image" />
+                  {
+                    ...styleSeven.leftPrint,
+                    left: `${leftLeft}px`,
+                    top: `${leftTop}px`,
+                    width: `${leftWidth}px`,
+                    height: `${leftHeight}px`,
+                  } as CSSProperties
+                  }
+                 alt="print Image" />
                 <img src={imageUrl} style={
-                  styleSeven.rightPrint as CSSProperties
+                  {
+                    ...styleSeven.rightPrint,
+                    left: `${rightLeft}px`,
+                    top: `${rightTop}px`,
+                    width: `${rightWidth}px`,
+                    height: `${rightHeight}px`,
+                  } as CSSProperties
+                  
                 } alt="print Image" />
               </div>
             }
