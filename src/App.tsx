@@ -1,11 +1,12 @@
 import  { useCallback, useRef, useState, CSSProperties } from 'react';
 import { toPng} from 'html-to-image';
 import './App.css';
-import {styleOne,styleTwo,styleThree,styleFour,styleFive,styleSix,styleSeven,styleEight,styleNine} from './styles';
+import {styleOne,styleTwo,styleThree,styleFour,styleFive,styleSix,styleSeven,styleEight} from './styles';
 import { FaChevronLeft } from "react-icons/fa6";
 import { FaChevronRight } from "react-icons/fa6";
 import { FaChevronUp } from "react-icons/fa6";
 import { FaChevronDown } from "react-icons/fa6";
+import { DiVim } from 'react-icons/di';
 
 
 
@@ -68,11 +69,6 @@ function App() {
       setTop(parseInt(styleEight.printContainer.top.split('px')[0]));
       setWidth(parseInt(styleEight.printContainer.width.split('px')[0]));
       setHeight(parseInt(styleEight.printContainer.height.split('px')[0]));
-    } else if (cur ===9){
-      setLeft(parseInt(styleNine.printContainer.left.split('px')[0]));
-      setTop(parseInt(styleNine.printContainer.top.split('px')[0]));
-      setWidth(parseInt(styleNine.printContainer.width.split('px')[0]));
-      setHeight(parseInt(styleNine.printContainer.height.split('px')[0]));
     }
 
   }
@@ -267,7 +263,7 @@ function App() {
               {isUploaded && <img src={imageUrl} className='print-image' alt="print Image" />}
             </div>
           </div>
-        ) : curNumber === 8 ? 
+        ) : 
 
         (
           <div style={styleEight.bgContainer as CSSProperties} ref={ref}>
@@ -284,23 +280,10 @@ function App() {
               {isUploaded && <img src={imageUrl} className='print-image' alt="print Image" />}
             </div>
           </div>
-        ) : 
-        (
-          <div style={styleNine.bgContainer as CSSProperties} ref={ref}>
-            <div style={
-              styleNine.printContainer as CSSProperties
-              
-            }>
-              {isUploaded && <img src={imageUrl} className='print-image' alt="print Image" />}
-            </div>
-          </div>
-        )
+        ) 
+        
       )
-      : (
-        <div className='please'>
-          upload the print, we can handle generating the images and downloading them for you
-        </div>
-      )}
+      : null}
 
       {isUploaded && (
         <main className='main'>
@@ -362,13 +345,6 @@ function App() {
               } as CSSProperties
             }
             >studio-8</button>
-            <button onClick={() => flipTo(9)}
-            style={
-              {
-                backgroundColor: curNumber === 9 ? '#12d68e' : '#04AA6D',
-              } as CSSProperties
-            }
-            >studio-9</button>
             
           </div>
 
@@ -408,7 +384,7 @@ function App() {
         <>
         <div className='my-input-form'>
           <label htmlFor="profile-pic" className="custom-file-upload">
-            Upload Print
+            Upload Image
           </label>
           <input 
           id='profile-pic'

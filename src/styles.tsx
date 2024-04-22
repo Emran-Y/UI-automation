@@ -23,31 +23,10 @@ export const styleOne = {
     },
 };
 
+
+
+
 export const styleTwo = {
-    bgContainer: {
-        position: "relative",
-        width: "900px",
-        height: "600px",
-        zIndex: "0",
-        backgroundImage: "url(/backgrounds/background2.png)",
-        backgroundSize: "cover",
-        
-    },
-    printContainer: {
-        width: "156px",
-        height: "193px",
-        zIndex: "999",
-        position: "absolute",
-        top: "157px",
-        left: "547px",
-        transform: "rotate(-1.1deg)",
-        // border: "1px solid black",
-      },
-      
-}
-
-
-export const styleThree = {
   bgContainer: {
     position: "relative",
     width: "600px",
@@ -68,7 +47,7 @@ export const styleThree = {
 }
 
 
-export const styleFour = {
+export const styleThree = {
   bgContainer: {
     position: "relative",
     width: "400px",
@@ -88,7 +67,7 @@ export const styleFour = {
 }
 
 
-export const styleFive = {
+export const styleFour = {
   bgContainer:{
     position: "relative",
     width: "700px",
@@ -107,7 +86,7 @@ export const styleFive = {
   },
 }
 
-export const styleSix = {
+export const styleFive = {
   bgContainer:{
     position: "relative",
     width: "640px",
@@ -127,7 +106,7 @@ export const styleSix = {
   },
 } 
 
-export const styleSeven = {
+export const styleSix = {
   bgContainer:{
     position: "relative",
     width: "640px",
@@ -146,7 +125,7 @@ export const styleSeven = {
   },
 }
 
-export const styleEight = {
+export const styleSeven = {
   bgContainer:{
     position: "relative",
     width: "740px",
@@ -165,7 +144,7 @@ export const styleEight = {
   },
 }
 
-export const styleNine = {
+export const styleEight = {
   bgContainer:{
     position: "relative",
     width: "780x",
