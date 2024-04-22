@@ -43,6 +43,7 @@ function App() {
 
   const flipTo = (cur:number) => {
     setCurNumber(cur);
+    setValue(20);
     if (cur ===1){
       setLeft(parseInt(styleOne.printContainer.left.split('px')[0]));
       setTop(parseInt(styleOne.printContainer.top.split('px')[0]));
