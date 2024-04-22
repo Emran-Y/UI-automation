@@ -110,55 +110,76 @@ export const styleFive = {
 export const styleSix = {
   bgContainer:{
     position: "relative",
-    width: "750px",
-    height: "500px",
+    width: "640px",
+    height: "700px",
     zIndex: "0",
     backgroundImage: "url(/backgrounds/background6.png)",
     backgroundSize: "cover",
   },
-  leftPrint : {
+  printContainer:{
     position:'absolute',
-    width: "250px",
-    height : '336px',
-    top:'98px',
-    left:'142px',
-    transform: "rotate(0.3deg)",
+    width: "129px",
+    height : '169px',
+    top:'40px',
+    left:'318px',
+    transform:'rotate(0.2deg)'
+    // backgroundColor: 'blue',
   },
-  rightPrint : {
-    position:'absolute',
-    width: "225px",
-    height : '327px',
-    top:'120px',
-    left:'437px',
-    transform: "rotate(0.3deg)",
-  }
-}
+} 
 
 export const styleSeven = {
   bgContainer:{
     position: "relative",
-    width: "850px",
-    height: "570px",
+    width: "640px",
+    height: "700px",
     zIndex: "0",
     backgroundImage: "url(/backgrounds/background7.png)",
     backgroundSize: "cover",
   },
-  leftPrint : {
+  printContainer:{
     position:'absolute',
-    width: "175px",
-    height : '228px',
-    top:'73px',
-    left:'234px',
+    width: "174px",
+    height : '248px',
+    top:'119px',
+    left:'210px',
     // backgroundColor: 'blue',
   },
-  rightPrint : {
-    position:'absolute',
-    width: "176px",
-    height : '228px',
-    top:'73px',
-    left:'445px',
-    // backgroundColor: 'blue',
-  }
 }
-  
 
+export const styleEight = {
+  bgContainer:{
+    position: "relative",
+    width: "740px",
+    height: "520px",
+    zIndex: "0",
+    backgroundImage: "url(/backgrounds/background8.png)",
+    backgroundSize: "cover",
+  },
+  printContainer:{
+    position:'absolute',
+    width: "231px",
+    height : '324px',
+    top:'77px',
+    left:'261px',
+    transform:'rotate(0.2deg)'
+  },
+}
+
+export const styleNine = {
+  bgContainer:{
+    position: "relative",
+    width: "780x",
+    height: "540px",
+    zIndex: "0",
+    backgroundImage: "url(/backgrounds/background9.png)",
+    backgroundSize: "cover",
+  },
+  printContainer:{
+    position:'absolute',
+    width: "271px",
+    height : '376px',
+    top:'84px',
+    left:'250px',
+    // backgroundColor: 'blue',
+  },
+}
