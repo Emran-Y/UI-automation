@@ -430,49 +430,49 @@ function App() {
                 backgroundColor: curNumber === 1 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >bg-1</button>
+            >studio-1</button>
             <button onClick={() => flipTo(2)} 
             style={
               {
                 backgroundColor: curNumber === 2 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >bg-2</button>
+            >studio-2</button>
             <button onClick={() => flipTo(3)}
             style={
               {
                 backgroundColor: curNumber === 3 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >bg-3</button>
+            >studio-3</button>
             <button  onClick={() => flipTo(4)} 
             style={
               {
                 backgroundColor: curNumber === 4 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >bg-4</button>
+            >studio-4</button>
             <button  onClick={() => flipTo(5)} 
             style={
               {
                 backgroundColor: curNumber === 5 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >bg-5</button>
+            >studio-5</button>
             <button  onClick={() => flipTo(6)} 
             style={
               {
                 backgroundColor: curNumber === 6 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >bg-6</button> 
+            >studio-6</button> 
             <button  onClick={() => flipTo(7)} 
             style={
               {
                 backgroundColor: curNumber === 7 ? '#12d68e' : '#04AA6D',
               } as CSSProperties
             }
-            >bg-7</button>
+            >studio-7</button>
           </div>
 
           <div className='adjuster-cont'>
@@ -495,10 +495,10 @@ function App() {
           </div>      
        
           <div className='dim-adjust'>
-            <button onClick={handleWidthAdd} >W +</button>
-            <button onClick={handleWidthSub}>W -</button>
-            <button onClick={handleHeightAdd}>H +</button>
-            <button onClick={handleHeightSub}>H -</button>
+            <button onClick={handleWidthAdd} >Width +</button>
+            <button onClick={handleWidthSub}>Width -</button>
+            <button onClick={handleHeightAdd}>Height +</button>
+            <button onClick={handleHeightSub}>Height -</button>
           </div>
 
           <div className='btns'>
