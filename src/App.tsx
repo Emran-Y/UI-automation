@@ -1,5 +1,5 @@
 import  { useCallback, useRef, useState, CSSProperties } from 'react';
-import { toPng,toSvg } from 'html-to-image';
+import { toPng} from 'html-to-image';
 import './App.css';
 import {styleOne,styleTwo,styleThree,styleFour,styleFive,styleSix,styleSeven,styleEight,styleNine} from './styles';
 import { FaChevronLeft } from "react-icons/fa6";
